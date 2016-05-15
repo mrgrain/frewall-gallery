@@ -1,0 +1,30 @@
+{
+    "name": "mrgrain/freewall-gallery",
+    "description": "",
+    "license": "GPL-3.0+",
+    "keywords": [],
+    "type": "wordpress-plugin",
+    "authors": [
+        {
+            "name": "Moritz Kornher",
+            "email": "mail@moritzkornher.de"
+        }
+    ],
+    "scripts": {
+        "publish": "Jumpstart\\Deploy::publish"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "composer/installers": "~1.0",
+        "mrgrain/jumpstart-battery": "~1.0"
+    },
+    "require-dev": {
+        "mrgrain/jumpstart-deploy": "@stable"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mrgrain\\FreewallGallery\\": "src/"
+        }
+    }
+}
